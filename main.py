@@ -16,8 +16,8 @@ Subject: Daily News
 """
 for article in content["articles"]:
     title = article["title"]
-    author = article["author"]
-    news = f"{title} '\n' {author}"
+    url = article["url"]
+    news = f"{title} \n {url} \n\n"
     e_mail = e_mail + news
 
 e_mail = e_mail.encode("utf-8")
