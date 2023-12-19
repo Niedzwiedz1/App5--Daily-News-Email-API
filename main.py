@@ -14,7 +14,7 @@ request = requests.get(url)
 content = request.json()
 e_mail = "Subject: Daily News \n"
 
-for article in content["articles"][:11]:
+for article in content["articles"][:10]:
     title = article["title"]
     url = article["url"]
     news = f"{title} \n {url} \n\n"
